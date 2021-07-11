@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <img src="imgs/bg.jpg" id="bg">
+        <h2 id="text">Mountains</h2>
+        <img src="imgs/man.png" id="man">
+        <img src="imgs/clouds_1.png" id="clouds_1">
+        <img src="imgs/clouds_2.png" id="clouds_2">
+        <img src="imgs/mountain_left.png" id="mountain_left">
+        <img src="imgs/mountain_right.png" id="mountain_right">
+        
+    </section>
+    <div class="sec">
+        <h2>ScrollTrigger is Awesome</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia facere eum esse facilis mollitia, cupiditate nam error consequatur numquam necessitatibus consequuntur optio blanditiis eaque ex sed! Nisi maiores est placeat?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus fuga necessitatibus magni modi maiores facere, iure quis sapiente quisquam, ex praesentium architecto tempora possimus labore dolorem corporis nulla consequatur veniam.
+            
+        </p>
+    </div>
+    <script src="script.js"></script>
+    <!-- GSAP ScrollTrigger CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
+<script>
+    gsap.to('#bg',{
+    scrollTrigger : {
+        scrub : 1
+    },
+    scale : 1.5
+});
+gsap.to('#man',{
+    scrollTrigger : {
+        scrub : 1
+    },
+    scale : 0.5
+});
+gsap.to('#mountain_left',{
+    scrollTrigger : {
+        scrub : 1
+    },
+    x : -500,
+});
+gsap.to('#mountain_right',{
+    scrollTrigger : {
+        scrub : 1
+    },
+    x : 500,
+});
+gsap.to('#clouds_1',{
+    scrollTrigger : {
+        scrub : 1
+    },
+    x : 200,
+});
+gsap.to('#clouds_2',{
+    scrollTrigger : {
+        scrub : 1
+    },
+    x : -200,
+});
+gsap.to('#text',{
+    scrollTrigger : {
+        scrub : 1
+    },
+    y : 500,
+});
+
+
+
+</script>
+</body>
+</html>
